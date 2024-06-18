@@ -17,7 +17,6 @@ function showSlide(n) {
   }
 
   slides[slideIndex - 1].style.display = "block";
-
 }
 
 // Function to go to the previous slide
@@ -39,10 +38,13 @@ function nextSlide() {
 // Initialize the carousel by showing the first slide
 
 showSlide(slideIndex);
-
 // Store and Wallpaper
 
+function startAutoSlide() {
+  autoSlideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+}
 
+startAutoSlide()
 // home
 
 function move(){
