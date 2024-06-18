@@ -19,6 +19,9 @@ function showSlide(n) {
   slides[slideIndex - 1].style.display = "block";
 }
 
+setInterval(nextSlide, 4000); 
+
+
 // Function to go to the previous slide
 
 function prevSlide() {
@@ -83,4 +86,21 @@ function selectWallpaper(imageUrl) {
 document.addEventListener('DOMContentLoaded', function() {
   loadWallpaper();
   setWallpaperBackground(localStorage.getItem('selectedWallpaper'));
+});
+
+const nav = document.querySelector('.nav');
+
+
+window.addEventListener('scroll', () => {
+
+  if (window.scrollY > 200) { // adjust the value to your needs
+
+    nav.classList.add('fixed');
+
+  } else {
+
+    nav.classList.remove('fixed');
+
+  }
+
 });
