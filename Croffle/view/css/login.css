@@ -7,12 +7,35 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     font-style: normal;
+    transition: ease-out;
+    transition-duration: 1s;
+    background-image: url(./../../assets/bg5.webp);
+    background-size: 200%;
+    background-repeat: no-repeat;
 }
-.home{
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../../font/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "MadeGentle";
+    src: url(../../font/MADE-Gentle.otf) format('truetype');
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../../font/Poppins/Poppins-Bold.ttf);
+    font-weight: bold
+}
+
+.home {
     filter: blur(10px);
-    background: rgb(239,160,11);
-    background: linear-gradient(90deg, rgba(239,160,11,1) 10%, rgba(247,194,72,1) 23%);
+    background: rgb(239, 160, 11);
+    background: linear-gradient(90deg, rgba(239, 160, 11, 1) 10%, rgba(247, 194, 72, 1) 23%);
 }
+
 .bc{
     position: absolute;
     top: 0;
@@ -100,12 +123,13 @@ body{
         outline: none;
     }
     button{
-        padding: 4px;
+        padding: 12px ;
         border-radius: 10px;
         border: none;
         background-color: #f17836;
         font-size: 1.2rem;
         color: whitesmoke;
+        font-weight: bold;
     }
 }
 
@@ -128,7 +152,7 @@ body{
 .close-btn {
     position: absolute;
     top: 12%;
-    right: 30%;
+    left: 75%;
     font-size: 28px;
     cursor: pointer;
     background-color: transparent;
@@ -136,6 +160,7 @@ body{
     padding: 0;
     text-decoration: none;
     color: black;
+    
 }
   
 .close-btn:hover {
